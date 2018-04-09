@@ -63,7 +63,7 @@ void arrival(char status[],int Arr[],int n)
 	while(1)
 	{
 		flag=0;
-		for(int i=0;i<n;i++)
+		for(int i=1;i<n;i++)
 		{
 			if((Arr[i]<=clock)&&(status[i]=='P'))
 			{
@@ -139,6 +139,7 @@ int main()
 			if(flag==0)
 			{
 				printf("\n\n");
+				printf("The total clock time is %d\n",clock);
 				printf("      All the processes are over. Have a nice day \n");
 				break;
 			}
